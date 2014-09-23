@@ -1,4 +1,4 @@
-## newrelic-redis
+# newrelic-redis
 
 This repository contains `Dockerfile` of NewRelic redis agent for docker's automated build
 published to the public docker hub registry.
