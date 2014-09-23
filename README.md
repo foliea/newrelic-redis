@@ -25,7 +25,7 @@ access any redis container through the docker link system.
 
 First, run a redis instance inside a docker container:
 
-    docker run -d --name redis -p 6379:6379 dockerfile/redis
+    docker run -d --name redis dockerfile/redis
 
 Then, run the agent with your **NewRelic License Key** and the app name of your choice:
 
