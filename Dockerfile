@@ -49,7 +49,3 @@ COPY newrelic_plugin.yml newrelic/config/newrelic_plugin.yml
 WORKDIR newrelic
 
 CMD ["./newrelic_redis_agent"]
-
-
-
-
