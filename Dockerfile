@@ -11,6 +11,7 @@ RUN apt-get update -q && \
     apt-get -qy install \
     git-core \
     curl \
+    wget \
     zlib1g-dev \
     build-essential \
     libssl-dev \
@@ -33,8 +34,6 @@ RUN curl -O http://ftp.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_MINOR.tar.g
     cd .. && \
     rm -r ruby-$RUBY_MINOR ruby-$RUBY_MINOR.tar.gz && \
     echo "gem: --no-document" > /usr/local/etc/gemrc
-
-RUN apt-get install wget
 
 RUN gem install bundler
 
