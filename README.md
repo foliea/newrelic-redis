@@ -10,16 +10,16 @@ access any redis container through the docker link system.
 
 ## Base Docker Image
 
-[ubuntu 14.04](https://registry.hub.docker.com/_/ubuntu/)
+* [ubuntu 14.04](https://registry.hub.docker.com/_/ubuntu/)
 
 ## Installation
 
-Install [docker](http://www.docker.com).
+1. Install [docker](http://www.docker.com).
 
-Download [automated build](https://registry.hub.docker.com/u/dockerfile/redis) from public 
+2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/redis) from public 
 [docker hub registry](https://registry.hub.docker.com/):
 
-    docker pull foliea/newrelic-redis
+    `docker pull foliea/newrelic-redis`
 
 ## Usage
 
