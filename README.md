@@ -16,7 +16,7 @@ access any redis container through the docker link system.
 
 1. Install [docker](http://www.docker.com).
 
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/redis) from public 
+2. Download [automated build](https://registry.hub.docker.com/u/foliea/newrelic-redis) from public 
 [docker hub registry](https://registry.hub.docker.com/):
 
     `docker pull foliea/newrelic-redis`
