@@ -29,4 +29,4 @@ First, run a redis instance inside a docker container:
 
 Then, run the agent with your **NewRelic License Key** and the app name of your choice:
 
-    docker run -d -e NEWRELIC_LICENSE_KEY=55691eef66890aef9f0f0856f32d5ff2dc24a96f -e NEWRELIC_APP_NAME="redis-dev" --link redis:redis foliea/newrelic-redis
+    docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> -e NEWRELIC_APP_NAME=<name> --link redis:redis foliea/newrelic-redis
