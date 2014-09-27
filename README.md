@@ -30,3 +30,7 @@ First, run a redis instance inside a docker container:
 Then, run the agent with your **NewRelic License Key** and the app name of your choice:
 
     docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> -e NEWRELIC_APP_NAME=<name> --link redis:redis foliea/newrelic-redis
+    
+If you want to monitor a specific redis url:
+
+    docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> -e NEWRELIC_APP_NAME=<name> -e REDIS_PORT=<redis url> foliea/newrelic-redis
