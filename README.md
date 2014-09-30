@@ -3,7 +3,8 @@
 This repository contains `Dockerfile` of NewRelic redis agent for docker's automated build
 published to the public docker hub registry.
 
-This agent is meant to monitor a redis instance running in another docker container.
+This agent is meant to monitor a redis instance, using 
+[newrelic_redis_plugin](https://github.com/kenjij/newrelic_redis_plugin).
 
 You don't need to bind a port of your redis container to the outside world, this agent will
 access any redis container through the docker link system.
