@@ -33,7 +33,7 @@ Then, run the agent with your **NewRelic License Key** and the app name of your 
                   -e NEWRELIC_APP_NAME=<name> \
                   --link redis:redis foliea/newrelic-redis
     
-If you want to monitor a specific redis url:
+Or, if you want to monitor a specific redis instance (even one running outside a container):
 
     docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> \
                   -e NEWRELIC_APP_NAME=<name> \
