@@ -32,7 +32,7 @@ First, run a redis instance inside a docker container:
 
     docker run -d --name redis dockerfile/redis
 
-Then, run the agent with your **NewRelic License Key** and the app name of your choice:
+Then, run the agent with your **New Relic License Key** and the app name of your choice:
 
     docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> \
                   -e NEWRELIC_APP_NAME=<name> \
