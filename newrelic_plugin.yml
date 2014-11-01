@@ -24,4 +24,4 @@ agents:
   redis:
     instance_name: <%= ENV['NEWRELIC_APP_NAME'] %>
     url: <%= ENV['REDIS_PORT'].gsub('tcp', 'redis') %> 
-    database: db0
+    database: <%= ENV['DATABASE'] || db0 %>
