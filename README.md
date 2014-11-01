@@ -43,3 +43,8 @@ Or, if you want to monitor a specific redis instance (even one running outside a
     docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> \
                   -e NEWRELIC_APP_NAME=<name> \
                   -e REDIS_PORT=<redis url> foliea/newrelic-redis
+                  
+## Environment variables
+
+* `DATABASE`: Database to monitor (default db0).
+* `PASSWORD`: Database password (default empty).
