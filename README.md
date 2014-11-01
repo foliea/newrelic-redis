@@ -47,4 +47,7 @@ Or, if you want to monitor a specific redis instance (even one running outside a
 ## Environment variables
 
 * `DATABASE`: Database to monitor (default db0).
+
+Not yet implemented:
+
 * `PASSWORD`: Database password (default empty).
