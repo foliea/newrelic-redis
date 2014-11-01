@@ -50,4 +50,4 @@ Or, if you want to monitor a specific redis instance (even one running outside a
 
 Not yet implemented:
 
-* `PASSWORD`: Database password (default empty).
+* `PASSWORD`: Redis password (default empty).
