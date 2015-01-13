@@ -21,10 +21,10 @@ access any redis container through the docker link system.
 
 1. Install [docker](http://www.docker.com).
 
-2. Download [automated build](https://registry.hub.docker.com/u/foliea/newrelic-redis) from public 
+2. Download [automated build](https://registry.hub.docker.com/u/folieadrien/newrelic-redis) from public 
 [docker hub registry](https://registry.hub.docker.com/):
 
-    `docker pull foliea/newrelic-redis`
+    `docker pull folieadrien/newrelic-redis`
 
 ## Usage
 
@@ -36,13 +36,13 @@ Then, run the agent with your **New Relic License Key** and the app name of your
 
     docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> \
                   -e NEWRELIC_APP_NAME=<name> \
-                  --link redis:redis foliea/newrelic-redis
+                  --link redis:redis folieadrien/newrelic-redis
     
 Or, if you want to monitor a specific redis instance (even one running outside a container):
 
     docker run -d -e NEWRELIC_LICENSE_KEY=<your license key> \
                   -e NEWRELIC_APP_NAME=<name> \
-                  -e REDIS_PORT=<redis url> foliea/newrelic-redis
+                  -e REDIS_PORT=<redis url> folieadrien/newrelic-redis
                   
 ## Environment variables
 
