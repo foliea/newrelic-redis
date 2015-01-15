@@ -45,7 +45,7 @@ ENV PLUGIN_VERSION 1.0.1
 RUN wget https://github.com/kenjij/newrelic_redis_plugin/archive/v$PLUGIN_VERSION.tar.gz && \
     tar -xzvf v$PLUGIN_VERSION.tar.gz  && \
     rm v$PLUGIN_VERSION.tar.gz && \
-    mv newrelic_redis_plugin-PLUGIN_VERSION newrelic
+    mv newrelic_redis_plugin-$PLUGIN_VERSION newrelic
 
 # Install gem dependencies.
 RUN cd newrelic && bundle install
