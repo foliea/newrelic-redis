@@ -7,8 +7,8 @@ ENV RUBY_MAJOR 2.1
 ENV RUBY_MINOR 2.1.2
 
 # Install dependencies.
-RUN apt-get update -q && \
-    apt-get -qy install \
+RUN apt-get update -qq && \
+    apt-get install -qy \
     git-core \
     curl \
     wget \
