@@ -38,11 +38,14 @@ RUN curl -O http://ftp.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_MINOR.tar.g
 # Install bundler.
 RUN gem install bundler
 
+# Set newrelic_redis_plugin version
+ENV PLUGIN_VERSION 1.0.1
+
 # Get newrelic redis plugin.
-RUN wget https://github.com/kenjij/newrelic_redis_plugin/archive/v1.0.1.tar.gz && \
-    tar -xzvf v1.0.1.tar.gz  && \
-    rm v1.0.1.tar.gz && \
-    mv newrelic_redis_plugin-1.0.1 newrelic
+RUN wget https://github.com/kenjij/newrelic_redis_plugin/archive/v$PLUGIN_VERSION.tar.gz && \
+    tar -xzvf v$PLUGIN_VERSION.tar.gz  && \
+    rm v$PLUGIN_VERSION.tar.gz && \
+    mv newrelic_redis_plugin-PLUGIN_VERSION newrelic
 
 # Install gem dependencies.
 RUN cd newrelic && bundle install
