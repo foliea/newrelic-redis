@@ -11,7 +11,7 @@ access any redis container through the docker link system.
 
 ## Base Docker Image
 
-* [ubuntu 14.04](https://registry.hub.docker.com/_/ubuntu/)
+* [Ubuntu 14.04](https://registry.hub.docker.com/_/ubuntu/)
 
 ## Sources
 
