@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Adrien Folie, folie.adrien@gmail.com
+MAINTAINER Adrien Folie <folie.adrien@gmail.com>
 
 # Set ruby version.
 ENV RUBY_MAJOR 2.1
