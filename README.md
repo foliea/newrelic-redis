@@ -1,4 +1,5 @@
 # newrelic-redis
+[![foliea/newrelic-redis](http://dockeri.co/image/foliea/newrelic-redis)](https://registry.hub.docker.com/u/foliea/newrelic-redis/)
 
 This repository contains `Dockerfile` of  New Relic redis agent for docker's automated build
 published to the public docker hub registry.
